@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#etchContainer {
+    width: 512px;
+    height: 512px;
+    margin: 5px 0px;
+    border: 2px solid black;
+}
+
+#gameModes {
+    display: flex;
+    justify-content: space-between;
+}
