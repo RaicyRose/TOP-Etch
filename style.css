@@ -12,11 +12,21 @@ body {
     justify-content: space-between;
 }
 
+#canvasSize {
+    border: 2px solid black;
+    padding: 0px 5px;
+    margin: 0;
+}
+
 #etchContainer {
     width: 512px;
     height: 512px;
     margin: 5px 0px;
     border: 2px solid black;
+}
+
+.divEtchSquare {
+
 }
 
 #gameModes {
