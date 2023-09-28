@@ -1,26 +1,42 @@
 //List of Variables, Lets, and Constants
 
 let gridWidth = 16;
-let canvasSizeText = `${gridWidth} x ${gridWidth}`;
-console.log(canvasSizeText);
+
 // List of Event Listeners
 
-
+document.getElementById("promptPlayer").addEventListener("click",checkGridWidth);
 
 // General functions
-function gridSizeText() {
+function updateCanvasSizeText() {
+    let canvasSizeText = `${gridWidth} x ${gridWidth}`;
     document.getElementById("canvasSize").innerHTML = canvasSizeText;
 }
 
-// Normal Mode functions
+function promptPlayerCanvasSize() {
+    gridWidth = prompt("Set canvas height & equal width", "Highest number being 100");
+    return gridWidth;
+}
+
+function checkGridWidth() {
+    promptPlayerCanvasSize();
+
+    console.log(gridWidth);
+
+    while (isNaN(gridWidth) || gridWidth > 100) {
+        gridWidth = prompt("Set canvas height & its equal width.", "Add a number under 100");
+    }
+    updateCanvasSizeText();
+}
+
+    // Normal Mode functions
 
 
-// Colorful Mode functions
+    // Colorful Mode functions
 
 
-// Transparency Mode functions
+    // Transparency Mode functions
 
 
-// Function on Initialize Page
+    // Function on Initialize Page
 
-gridSizeText();
+    updateCanvasSizeText();
