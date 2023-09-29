@@ -23,10 +23,20 @@ body {
     height: 512px;
     margin: 5px 0px;
     border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .divEtchSquare {
+    flex: 1;
+    min-width: calc(100% / var(--columns));
+    box-sizing: border-box;
+    border: 1px solid grey;
+    background-color: white;
+}
 
+.normalMode {
+    background-color: black;
 }
 
 #gameModes {
